@@ -1,0 +1,12 @@
+m = int(input("Introduceti un numar "))
+n = int(input("Introduceti un numar mai mare ca m "))
+
+if n > m:
+    for i in range(11):
+        if m ** i == n:
+            print("n este m la puterea", i)
+        else:
+            pass
+
+elif n < m:
+    print("n nu este mai mare ca m")
