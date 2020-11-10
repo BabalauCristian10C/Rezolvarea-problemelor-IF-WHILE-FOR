@@ -1,0 +1,18 @@
+z28 = ['Februarie in an ne bisect']
+z29 = ['Februarie in an bisect']
+z30 = ['Aprilie', 'Iunie', 'Septembrie', 'Noiembrie']
+z31 = ['Mai', 'Iulie', 'Octombrie', 'Decembrie']
+n = 31
+
+if n == 28:
+    for luni in z28:
+        print(luni)
+elif n == 29:
+    for luni in z29:
+        print(luni)
+elif n == 30:
+    for luni in z30:
+        print(luni)
+else:
+    for luni in z31:
+        print(luni)
