@@ -1,0 +1,9 @@
+n = eval(input("Introduceti un numar natural "))
+s=0
+if type(n) != int():
+    print("Numarul nu este natural")
+
+
+for num in range(n+1):
+    s += num
+print(s)
