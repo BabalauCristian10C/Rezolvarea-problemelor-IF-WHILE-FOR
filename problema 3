@@ -2,7 +2,7 @@ m = int(input("Introduceti un numar "))
 n = int(input("Introduceti un numar mai mare ca m "))
 
 if n > m:
-    for i in range(11):
+    for i in range(99):
         if m ** i == n:
             print("n este m la puterea", i)
         else:
