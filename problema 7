@@ -1,0 +1,13 @@
+n = int(input("Introduceti un numar natural mai mic ca 20 "))
+i = 0
+init = 1
+summ = 0
+for i in range(1, n+1):
+    init *= 2
+    summ += init
+    if summ + i > 100 and i < 7:
+        print("Cadoul sau a depasit 100$ la varsta de", i)
+
+
+summ = summ + 1 + n
+print("La varsta ", n , " Mihai a primit", summ, "$")
