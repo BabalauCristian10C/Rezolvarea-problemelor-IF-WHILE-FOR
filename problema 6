@@ -1,0 +1,33 @@
+n = int(input("Introduceti un numar natural "))
+summ = 0
+sum1 = 0
+sum2=0
+sum3=0
+
+for numbers in range(0, n+1):
+    summ += numbers ** 3
+
+for numbers in range(n+1):
+    sum1 += numbers
+sum1 = sum1 ** 2
+
+com = [summ, sum1]
+
+if summ == sum1:
+    print("#a ",summ, " = ",sum1,"aceste ecuatii sunt egale")
+else:
+    print(f'{max(com)} > {min(com)}')
+
+# b
+for numbers in range(n+1):
+    sum2 += numbers**2
+sum2= 3 * sum2
+for numbers in range(n+1):
+    sum3 += numbers
+sum3 = sum3 + n**3 + n**2
+if sum2>sum3:
+    print(f'{sum2} > {sum3}')
+elif sum2<sum3:
+    print(f'{sum3} > {sum2}')
+else:
+    print(sum2, "=", sum3)
