@@ -1,0 +1,20 @@
+den1 = ["dragon", "sarpe", "cal", "oaie", "maimuta", "cucos" , "ciine", "porc" , "sobolan", "bou", "tigru", "iepure"]
+an = int(input("Introduceti anul care ati dori sa afltati - "))
+
+if an > 2000:
+    dif = an - 2000
+    if dif > 12:
+        rest = dif % 12
+        print(den1[rest])
+    if dif<12:
+        print(den1[dif])
+
+if an < 2000:
+    dif = 2000 - an
+    if dif > 12:
+        rest = dif % 12
+        print(den1[-rest])
+    if dif < 12:
+        print(den1[-dif])
+if an == 2000:
+    print(den1[0])
